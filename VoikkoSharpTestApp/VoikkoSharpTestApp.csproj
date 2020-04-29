@@ -66,8 +66,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="VoikkoSharp, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VoikkoSharp.1.0.0.5\lib\net47\VoikkoSharp.dll</HintPath>
+    <Reference Include="VoikkoSharp, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VoikkoSharp.1.0.0.10\lib\net47\VoikkoSharp.dll</HintPath>
     </Reference>
     <Reference Include="VPKSoft.SpellCheck.ExternalDictionarySource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VPKSoft.SpellCheck.ExternalDictionarySource.1.0.0\lib\net47\VPKSoft.SpellCheck.ExternalDictionarySource.dll</HintPath>
@@ -124,11 +124,11 @@
     <Content Include="VPKSoft.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\VoikkoSharp.1.0.0.5\build\VoikkoSharp.targets" Condition="Exists('..\packages\VoikkoSharp.1.0.0.5\build\VoikkoSharp.targets')" />
+  <Import Project="..\packages\VoikkoSharp.1.0.0.10\build\VoikkoSharp.targets" Condition="Exists('..\packages\VoikkoSharp.1.0.0.10\build\VoikkoSharp.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\VoikkoSharp.1.0.0.5\build\VoikkoSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VoikkoSharp.1.0.0.5\build\VoikkoSharp.targets'))" />
+    <Error Condition="!Exists('..\packages\VoikkoSharp.1.0.0.10\build\VoikkoSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VoikkoSharp.1.0.0.10\build\VoikkoSharp.targets'))" />
   </Target>
 </Project>
