@@ -7,6 +7,7 @@ A wrapper library for the [Voikko](https://voikko.puimula.org) (Free linguistic 
 ## Notes
 * The [libvoikko](https://github.com/VPKSoft/VoikkoSharp/tree/master/libvoikko) is a direct copy from [corevoikko](https://github.com/voikko/corevoikko/tree/master/libvoikko/cs) except for the solution part and for the NuGet package.
 * The [VoikkoSharp](https://github.com/VPKSoft/VoikkoSharp/tree/master/VoikkoSharp) is an interface implementation to add support for Voikko to be used with the [VPKSoft.ScintillaSpellCheck](https://github.com/VPKSoft/VPKSoft.ScintillaSpellCheck) and with the [VPKSoft.SpellCheckUtility](https://github.com/VPKSoft/VPKSoft.SpellCheckUtility) via the [VPKSoft.SpellCheck.ExternalDictionarySource](https://github.com/VPKSoft/VPKSoft.SpellCheck.ExternalDictionarySource) interface.
+* The test application uses the [VPKSoft.SpellCheckUtility](https://github.com/VPKSoft/VPKSoft.SpellCheckUtility) and [VoikkoSharp](https://github.com/VPKSoft/VoikkoSharp/tree/master/VoikkoSharp) to spell check Finnish text.
 
 ## Screenshots
 _Pääikkuna testisovelluksessa_
