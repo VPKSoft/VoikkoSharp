@@ -4,6 +4,6 @@ A wrapper library for the [Voikko](https://voikko.puimula.org) (Free linguistic 
 ## Thanks to
 * [Voikko](https://github.com/voikko/corevoikko)
 
-## Screen shots
+## Screenshots
 _Pääikkuna testisovelluksessa_
 ![image](https://user-images.githubusercontent.com/40712699/80605974-67101700-8a3c-11ea-8c42-0e4a92b88afe.png)
