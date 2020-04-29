@@ -1,0 +1,6 @@
+﻿1. GIT Clone: https://github.com/voikko/corevoikko, use the /corevoikko/libvoikko/cs/libvoikko -project.
+2. Get the pre-compiled DLL files from: https://www.puimula.org/htp/testing/voikko-sdk/win-crossbuild/
+3. Move the DLL files to VoikkoWin\win32 and VoikkoWin\win64 files renaming them as voikko.dll.
+4. Download the Finish dictionary from: https://www.puimula.org/htp/testing/voikko-snapshot-v5/ and extract it the the folder VoikkoWin\5.
+5. Set the files of VoikkoWin\win32, VoikkoWin\win64 and VoikkoWin\5 folders to be copied to the output directory.
+6. Remember to document further if required.
