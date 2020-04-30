@@ -40,17 +40,8 @@ namespace VoikkoSharp
     /// </summary>
     /// <seealso cref="VPKSoft.SpellCheck.ExternalDictionarySource.IExternalDictionarySource" />
     /// <seealso cref="System.IDisposable" />
-    public class VoikkoExternalSpellCheck : IExternalDictionarySource, IDisposable
+    public class VoikkoExternalSpellCheck : IExternalDictionarySource
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="VoikkoExternalSpellCheck"/> class.
-        /// </summary>
-        /// <param name="voikko">The <see cref="Voikko"/> instance to use with the spell checking.</param>
-        public VoikkoExternalSpellCheck(Voikko voikko)
-        {
-            Voikko = voikko;
-        }
-
         /// <summary>
         /// Gets or sets the <see cref="Voikko"/> class instance.
         /// </summary>
@@ -75,6 +66,19 @@ namespace VoikkoSharp
         {
             return Voikko.Spell(word);
         }
+
+        /// <summary>
+        /// Initializes the dictionary data of this class.
+        /// </summary>
+        public void Initialize()
+        {
+            Voikko = PrepareVoikko.PrepareInstance();
+        }
+
+        /// <summary>
+        /// Gets ot sets the culture name in the format languagecode2-country/regioncode2.
+        /// </summary>
+        public string CultureName { get; set; }
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.

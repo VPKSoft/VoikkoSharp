@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectUrl>https://github.com/VPKSoft/VoikkoSharp</projectUrl>
     <description>$description$</description>
-    <releaseNotes>Initial NuGet release. Added missing files.</releaseNotes>
+    <releaseNotes>Updated NuGet dependecies.</releaseNotes>
     <copyright>Copyright © VPKSoft 2020</copyright>
     <tags>Voikko wrapper Finnish linguistic</tags>
     <license type="expression">LGPL-3.0-or-later</license>

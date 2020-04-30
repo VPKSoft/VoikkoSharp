@@ -42,11 +42,13 @@ namespace VoikkoSharpTestApp
             InitializeComponent();
 
             // load the DLL suitable for the architecture..
-            PrepareVoikko.Prepare();
+            //PrepareVoikko.Prepare();
 
+            var voikko = new VoikkoExternalSpellCheck();
+            voikko.Initialize();
 
-            Voikko = new Voikko("fi", Path.GetDirectoryName(Assembly.GetEntryAssembly()?.Location));
-            SpellChecker.ExternalDictionary = new VoikkoExternalSpellCheck(Voikko);
+            
+            SpellChecker.ExternalDictionary = voikko;
 
             // subscribe to the event which is called by the SpellChecker class on progressing with the spell checking;
             // there is no reason to subscribe this event if the checking isn't visualized or done in real-time..

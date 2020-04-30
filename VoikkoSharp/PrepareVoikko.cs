@@ -83,7 +83,7 @@ namespace VoikkoSharp
         /// <returns>A new <see cref="Voikko"/> class instance prepared with the specified language. The library location for the spelling data is used.</returns>
         public static Voikko PrepareInstance(string language)
         {
-            return PrepareInstance(language, Path.GetDirectoryName(Assembly.GetEntryAssembly()?.Location));
+            return PrepareInstance(language, Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace VoikkoSharp
         /// <returns>A new <see cref="Voikko"/> class instance prepared with Finnish language and the library location for the spelling data is used.</returns>
         public static Voikko PrepareInstance()
         {
-            return PrepareInstance("fi", Path.GetDirectoryName(Assembly.GetEntryAssembly()?.Location));
+            return PrepareInstance("fi", Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         }
 
         /// <summary>
