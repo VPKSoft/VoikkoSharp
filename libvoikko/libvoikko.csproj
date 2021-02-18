@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net47</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <ProductVersion>8.0.50727</ProductVersion>
     <AssemblyTitle>libvoikko.Properties</AssemblyTitle>
     <Company>Voikko</Company>
     <Product>Voikko</Product>
     <Description>Voikko is a morphological analyzer, spelling and grammar checker, hyphenator and collection of related linguistic data for Finnish language.</Description>
-    <Copyright>Copyright © Voikko 2020</Copyright>
-    <Version>1.0.1</Version>
+    <Copyright>Copyright © Voikko 2021</Copyright>
+    <Version>1.0.2</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ConsolePause>false</ConsolePause>
     <Authors>Voikko</Authors>
@@ -20,12 +20,6 @@
     <RepositoryUrl>https://github.com/VPKSoft/VoikkoSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net47|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\voikko_icon.png">

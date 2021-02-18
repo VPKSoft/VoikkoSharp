@@ -3,7 +3,7 @@
 VoikkoSharp
 
 A wrapper library for the Voikko (Free linguistic software and data for Finnish).
-Copyright © 2020 VPKSoft, Petteri Kautonen
+Copyright © 2021 VPKSoft, Petteri Kautonen
 
 Contact: vpksoft@vpksoft.net
 

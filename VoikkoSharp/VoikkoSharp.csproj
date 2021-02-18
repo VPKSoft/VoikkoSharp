@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net47</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>VoikkoSharp</AssemblyTitle>
     <Company>VPKSoft</Company>
     <Product>VoikkoSharp</Product>
     <Description>A C# spell checker wrapper library for the Voikko (Free linguistic software and data for Finnish)</Description>
-    <Copyright>Copyright © VPKSoft 2020</Copyright>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <Copyright>Copyright © VPKSoft 2021</Copyright>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
     <DocumentationFile>bin\$(Configuration)\VoikkoSharp.xml</DocumentationFile>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>VPKSoft</Authors>
@@ -23,20 +23,9 @@
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net47|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="libvoikko" Version="1.0.1" />
-    <PackageReference Include="VPKSoft.SpellCheck.ExternalDictionarySource" Version="1.0.1" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Net.Http" />
+    <PackageReference Include="libvoikko" Version="1.0.2" />
+    <PackageReference Include="VPKSoft.SpellCheck.ExternalDictionarySource" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\voikko_icon.png">
